@@ -4,11 +4,11 @@
 	<groupId>com.hascode.tutorial</groupId>
 	<artifactId>tika-samples</artifactId>
 	<version>0.0.1</version>
-	
+
 	<properties>
 		<tika.version>1.2</tika.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.tika</groupId>
@@ -21,4 +21,16 @@
 			<version>${tika.version}</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
